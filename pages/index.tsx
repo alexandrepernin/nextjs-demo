@@ -2,6 +2,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -52,6 +53,18 @@ const Home: NextPage = () => {
             </p>
           </a>
         </div>
+        <Link href={"/static-generation"}>
+          <a>Static Generation</a>
+        </Link>
+        <Link href={"/static-generation/with-data"}>
+          <a>Static Generation With Data</a>
+        </Link>
+        <Link href={"/static-generation/without-data"}>
+          <a>Static Generation Without Data</a>
+        </Link>
+        <Link href={"/server-side-rendering"}>
+          <a>Server Side Rendering</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>
