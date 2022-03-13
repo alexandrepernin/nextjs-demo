@@ -14,7 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <SummaryStyle.SummaryContainer>
+        <SummaryStyle.Container>
+          <SummaryStyle.Title>Welcome Aboard</SummaryStyle.Title>
           <Link href={"/static-generation"}>
             <a>Static Generation</a>
           </Link>
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
           <Link href={"/server-side-rendering"}>
             <a>Server Side Rendering</a>
           </Link>
-        </SummaryStyle.SummaryContainer>
+        </SummaryStyle.Container>
       </main>
     </div>
   );

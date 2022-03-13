@@ -8,7 +8,8 @@
     "start": "next start",
     "test:linter": "next lint",
     "test:style": "stylelint './**/*.{ts,tsx}'",
-    "test:type": "tsc --noEmit"
+    "test:type": "tsc --noEmit",
+    "test:all": "yarn test:linter && yarn test:style && yarn test:type"
   },
   "dependencies": {
     "next": "12.1.0",
